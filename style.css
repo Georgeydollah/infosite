@@ -7,15 +7,15 @@ padding: 0;
   background-size: 100%;
   background-position:  center;
   font-family: sans-serif;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
 }
 .contact-title{
   margin-top: 100px;
   color: #fff;
   text-transform: uppercase;
-  transition-property: width;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-  transition-delay: 1s;
 }
 .contact-title h1{
   font-size: 32px;
