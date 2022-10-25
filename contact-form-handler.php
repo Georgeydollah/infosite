@@ -1,6 +1,6 @@
 <?php
-  $name = $_Post['name'];
-  $visitor_email = $_Post['email'];
+  $name = $_POST['name'];
+  $visitor_email = $_POST['email'];
   $message = $_POST['message'];
 
   $email_from = 'george@busby.info';
@@ -19,6 +19,6 @@
 
     mail($to,$email_subject,$email_body,$headers);
 
-    header("location: index.html");
+    $headers("location: index.html");
 
 ?>
