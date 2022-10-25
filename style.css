@@ -5,7 +5,7 @@ padding: 0;
   background: url(pic1.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position:  center, auto;
+  background-position:  center;
   font-family: sans-serif;
 }
 .contact-title{
