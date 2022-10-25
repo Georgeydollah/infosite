@@ -12,6 +12,15 @@ padding: 0;
   transition-timing-function: linear;
   transition-delay: 1s;
 }
+.container{
+  width: 100%;
+    height: 100vh;
+  background:#001660;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+    
 .contact-title{
   margin-top: 100px;
   color: #fff;
