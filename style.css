@@ -27,7 +27,7 @@ form{
 }
 .form-control{
   width: 600px;
-  background: transparent;
+  background: #ff2378;
   border: none;
   outline: none;
   border-bottom: 1px solid gray;
