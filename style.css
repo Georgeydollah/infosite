@@ -1,11 +1,11 @@
 body{
 margin: 0;
 padding: 0;
-  text-align: auto;
+  text-align: center, auto;
   background: url(pic1.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position:  auto;
+  background-size: center, auto;
+  background-position:  center, auto;
   font-family: sans-serif;
 }
 .contact-title{
