@@ -4,7 +4,7 @@ padding: 0;
   text-align: center, auto;
   background: url(pic1.jpg);
   background-repeat: no-repeat;
-  background-size: center, auto;
+  background-size: 100%;
   background-position:  center, auto;
   font-family: sans-serif;
 }
