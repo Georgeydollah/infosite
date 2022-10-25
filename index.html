@@ -16,6 +16,7 @@
 </div>
 
   <div class="contact-form">
+    <form onsubmit="sendEmail(); reset(); return false;">
     <form id="contact-form" method="post" action="contact-form-handler.php">
       <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
       <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
@@ -27,5 +28,21 @@
       
   </div>
   <script src="particles.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+      }
+    </script>
 </body>
 </html>
