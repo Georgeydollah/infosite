@@ -1,50 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>George Busby - Technical Support</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('/infosite/futurecomputer.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
 </head>
 <body>
-<div id="particles-js"></div>
-  
-  <div class="container">
-  
-<div class ="contact-title">
-<h1>George Busby</h1>
-<h2>Technical Support</h2>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Logo
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">35 days left</p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div>
 </div>
 
-  <div class="contact-form">
-    <form onsubmit="sendEmail(); reset(); return false;">
-    <form id="contact-form" method="post" action="contact-form-handler.php">
-      <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
-      <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
-      <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
-      
-      <input type="submit" class="form-control submit" value="SEND MESSAGE">
-      </form>
-      
-      
-  </div>
-  <script src="particles.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail(){
-        Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "George@busby.info",
-    Password : "137797BB7DBA68676D5DBE94296EC7FCB70D",
-    To : 'busbybusbybusby@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New Contact Form Enquiry",
-    Body : "Name: " + document.getElementById("name").value
-          + "<br> Email: " + document.getElementById("email").value
-          + "<br> Message: " + document.getElementById("message").value
-}).then(
-  message => alert(Message Sent Successfully)
-);
-      }
-    </script>
 </body>
 </html>
