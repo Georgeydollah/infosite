@@ -12,7 +12,10 @@ padding: 0;
   margin-top: 100px;
   color: #fff;
   text-transform: uppercase;
-  transition: all 4s ease-in-out;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
 }
 .contact-title h1{
   font-size: 32px;
@@ -23,7 +26,10 @@ padding: 0;
 }
 form{
   margin-top: 50px;
-  transition: all 4s ease-in-out;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
 }
 .form-control{
   width: 600px;
