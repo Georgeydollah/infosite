@@ -1,24 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>George Busby - Tech Support</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-	
 <body>
-<header>
-  <div class="name">
-        <h1>George Busby - Tech Aspirant&nbsp;</h1>
-        <! div class="hero-nav__button" !>
-            <!a href="#" class="btn"!>
-	</div>
-</header>
-<body>
-	
+<h1 class="name">George Busby - Tech Aspirant</h1>
 <div id="timeline-content">
-  <h1>Career Progression&nbsp;&nbsp;</h1>
-
+  <h2 class="rellax" data-rellax-speed="-0.8">Career Progression</h2>
   <ul class="timeline">
     <li class="event" data-date="Sep 2022 - Dec 2022">
       <h3>AI Skills Bootcamp (Level 4)</h3>
@@ -31,11 +21,11 @@
       <p><i>Hands on experience applying my fundamental knowledge of software and hardware. Learning a lot about how businesses operate and their mechanisms.</i></p>
     
     </li>
-    <li class="event" id="date" data-date="Dec 2021 - Jan 2022  ">
+    <li class="event" data-date="Dec 2021 - Jan 2022  ">
       <h3>IT Systems and Principles (Level 2)</h3>
       <p></p> <p>Course provided by JBC Skills taught to City and Guilds specifications. </p>    
     </li>
-    <li class="event" id="date" data-date="Aug 2022">
+    <li class="event" data-date="Aug 2022">
       <h3>Return to UK </h3>
       <p></p> <p>Spurred on by the pandemic, I returned to the UK hoping to join the RAF. Unable to due to having been out of the country for too long. </p>    
     </li>
@@ -68,8 +58,14 @@
   </ul>
 </div>
 <!-- partial -->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script src="js/index.js"></script>
+<script src="./javascripts/rellax.min.js"></script>
+    <script>
+		var rellax = new Rellax('.rellax', {
+        center: true
+      });
+      var rellaxNonCentered = new Rellax('.rellax-non-centered', {
+        center: false
+	  });
+	</script>
 </body>
 </html>
